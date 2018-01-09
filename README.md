@@ -17,13 +17,13 @@ npm install --save rtmp-server
 # Usage 
 ```js
 const RtmpServer = require('rtmp-server');
-const rtmpServer = new RtmpServer();
+const server = new RtmpServer();
 
-rtmpServer.on('error', err => {
+server.on('error', err => {
   throw err;
 });
 
-rtmpServer.on('client', client => {
+server.on('client', client => {
   //client.on('command', command => {
   //  console.log(command.cmd, command);
   //});
@@ -45,7 +45,7 @@ rtmpServer.on('client', client => {
   });
 });
 
-rtmpServer.listen(1935);
+server.listen(1935);
 ```
 
 You can now publish streams to `rtmp://localhost:1935/live` and use any unique stream key.

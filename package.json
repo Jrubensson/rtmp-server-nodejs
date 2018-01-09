@@ -2,10 +2,9 @@
   "name": "rtmp-server",
   "version": "0.2.0",
   "description": " A Node.js implementation of RTMP Server ",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "node test/manual.js"
   },
   "repository": {
     "type": "git",
